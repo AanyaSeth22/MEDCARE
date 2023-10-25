@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #C82D2D;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none; 
+    color: #eb0f0f; 
+}
+
+a:hover {
+    color: #C82D2D; 
+}
+
+nav {
+    background-color: #f7c9c9;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+}
+
+nav li {
+    font-size: 20px;
+    display: inline;
+    margin: 60px;
+}
+
+.nearestbb-search h2{
+    text-align: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: row;
+}
+.select-box{
+    padding: 20px;
+}
+.select-box select{
+    width: 300px;
+    height: 40px;
+    border: 2.5px solid #ff0000;
+    cursor: pointer;
+}
+.search{          
+    padding: 20px;
+    padding-top: 25px;
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    font-size: larger;
+    background-color: #c82d2d;
+    color: #fff;
+    cursor: pointer;
+}
+.btn:hover{
+background-color: #f7c9c9;    
+}
+
+footer {
+    background-color: #C82D2D;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+

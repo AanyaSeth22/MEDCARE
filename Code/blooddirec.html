@@ -1,0 +1,95 @@
+<!-- stylesheet = styles2.css -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blooddirec.css">
+    <title>Recipients - Blood Bank Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Blood Bank(BB)</h1>
+        <p>Find Nearest Blood Bank(BB) here !.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="bloodbank.html">Home</a></li>
+            <li><a href="donors.html">Donors</a></li>
+            <li><a href="#">Recipients</a></li>
+            <li><a href="blooddirec.html">Blood Directory</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <section class="nearestbb-search">
+        <h2>Nearest Blood Bank(BB)/Blood Storage Unit(BSU)</h2>
+       
+
+        <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Select State</option>
+                <option>Andhra Pradesh</option>
+                <option>Punjab</option>
+                <option>Gujrat</option>
+                <option>Madhya Pradesh</option>
+                <option>Manipur</option>
+                
+              </select>
+            </div>
+
+            <div class="column">
+                <div class="select-box">
+                  <select>
+                    <option hidden>Select District</option>
+                    <option>Vishakhapatnam</option>
+                    <option>Mohali</option>
+                    <option>Ahmedabad</option>
+                    <option>Chattarpur</option>
+                    <option>Imphal</option>
+                    
+                  </select>
+                </div>
+
+                <div class="column" ></div>
+                    <div class="select-box">
+                      <select>
+                        <option hidden>Blood Bank or Hospital Name</option>
+                        <option>PGIMER</option>
+                        
+                      </select>
+                    </div>
+                    <div class="column">
+                      <div class="search">
+                        <button type="submit" class="btn">Search</button>
+                    </div>
+                    </div>
+    
+
+    <footer>
+        <p>&copy; 2023 Blood Bank Management System</p>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const searchForm = document.getElementById('search-form');
+    
+    const recipientNameInput = document.getElementById('recipient-name');
+
+    const searchResults = document.getElementById('search-results');
+
+    searchForm.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        const recipientName = recipientNameInput.value;
+
+        searchResults.innerHTML = `Search results for: ${recipientName}`;
+    });
+});
+
+    </script>
+</body>
+</html>

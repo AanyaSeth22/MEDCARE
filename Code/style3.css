@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #C82D2D;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none; 
+    color: #000; 
+}
+
+a:hover {
+    color: #C82D2D; 
+}
+
+nav {
+    background-color: #f7c9c9;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+}
+
+nav li {
+    font-size: 20px;
+    display: inline;
+    margin: 60px;
+}
+
+.recipient-search {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.recipient-search h2{
+    font-size: 40px;
+}
+
+#search-form {
+    text-align: center;
+    margin: 20px;
+   
+}
+
+
+
+#recipient-name {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#recipient-name::placeholder {
+    font-size: 1.2em;
+}
+
+.btn {
+    
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C82D2D; 
+    color: #fff; 
+    text-decoration: none;
+    border: none;
+    border-radius: 4px; 
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 2px solid #000;
+}
+
+footer {
+    background-color: #C82D2D;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+

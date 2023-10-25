@@ -1,0 +1,77 @@
+<!-- stylesheet = styles2.css -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Recipients - Blood Bank Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Recipients</h1>
+        <p>Find blood donors here.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="bloodbank.html">Home</a></li>
+            <li><a href="donors.html">Donors</a></li>
+            <li><a href="#">Recipients</a></li>
+            <li><a href="blooddirec.html">Blood Directory</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <section class="recipient-search">
+        <h2>Search for a Blood Recipient</h2>
+        <form id="search-form">
+           
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option selected>Select Blood Group</option>
+                <option value="1">A+</option>
+                <option value="2">O+</option>
+                <option value="3">B+</option>
+                <option value="4">AB+</option>
+                <option value="5">A-</option>
+                <option value="6">O-</option>
+                <option value="7">B-</option>
+                <option value="8">AB-</option>
+                
+              </select>
+              
+            <button type="submit" class="btn">Search</button>
+        </form>
+        <div id="search-results"></div>
+    </section>
+
+    
+    
+    
+    
+
+    <footer>
+        <p>&copy; 2023 Blood Bank Management System</p>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const searchForm = document.getElementById('search-form');
+    
+    const recipientNameInput = document.getElementById('recipient-name');
+
+    const searchResults = document.getElementById('search-results');
+
+    searchForm.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        const recipientName = recipientNameInput.value;
+
+        searchResults.innerHTML = `Search results for: ${recipientName}`;
+    });
+});
+
+    </script>
+</body>
+</html>
